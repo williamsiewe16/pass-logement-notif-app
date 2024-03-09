@@ -10,6 +10,9 @@ load_dotenv()
 
 app = Flask(__name__)
 
+@app.route('/test')
+def test():
+   return "ok"
 
 @app.route('/fetch_offers')
 def fetch_and_notify():
